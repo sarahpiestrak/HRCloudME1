@@ -1,0 +1,160 @@
+
+<div igxLayout igxLayoutDir="column" class="main_container">
+   <div class="mainbar-box" igxLayout igxLayoutDir="row" igxLayoutItemAlign="flex-end">
+         <div igxFlex class="mainbar-box__item" >  
+            <img src="./../assets/images/hrcloud2Small.png">  </div>
+
+
+        <!-- <div  class="mainbar-box__item"  igxLayoutItemAlign="stretch"> </div>  -->
+        <div  class="mainbar-box__item" igxLayoutItemAlign="flex-end"><a href="google.com">Features</a></div>
+        <div  class="mainbar-box__item" igxLayoutItemAlign="flex-end"><a href="yahoo.com">Small Businesses</a></div>
+        <div   class="mainbar-box__item" igxLayoutItemAlign="flex-end"><a href="test.com">HR Consultants</a></div>
+        <div  class="mainbar-box__item" igxLayoutItemAlign="flex-end"><a href="pricing.com">Pricing</a></div>
+        <div   class="mainbar-box__item" igxLayoutItemAlign="flex-end"><a href="test.com">Constact Us</a></div>
+      
+       
+    </div>
+
+    <div class="carousel-container"  >
+        <igx-carousel #carousel>
+            @for (slide of slides; track slide) {
+            <igx-slide>
+                <div class="image-container">
+                <img [src]="slide.src">
+                </div>
+            </igx-slide>
+            }
+        </igx-carousel>
+    </div>
+
+<div class="card-wrapper" igxLayout igxLayoutDir="row" igxLayoutJustify="space-between">
+    <div class="card-box__el">
+        <igx-card elevated>
+            <igx-card-media height="180px">
+            <img [src]="card.imageUrl">
+            </igx-card-media>
+
+            <igx-card-header>
+            <h3 igxCardHeaderTitle>{{ card.title }}</h3>
+            <h5 igxCardHeaderSubtitle>{{ card.subtitle }}</h5>
+            </igx-card-header>
+
+            <igx-card-content>
+            <p>{{ card.content }}</p>
+            </igx-card-content>
+
+            <igx-card-actions>
+            @for (button of card.buttons; track button) {
+                <button igxButton igxRipple igxStart>{{ button }}</button>
+            }
+            @for (icon of card.icons; track icon) {
+                <button igxIconButton="flat"
+                igxRipple
+                [igxRippleCentered]="true"
+                igxEnd>
+                <igx-icon>{{icon}}</igx-icon>
+                </button>
+            }
+            </igx-card-actions>
+
+        </igx-card>
+    </div>
+    <div class="card-box__el">
+        <igx-card elevated>
+            <igx-card-media height="180px" >
+            <img [src]="card.imageUrl">
+            </igx-card-media>
+
+            <igx-card-header>
+            <h3 igxCardHeaderTitle>{{ card.title }}</h3>
+            <h5 igxCardHeaderSubtitle>{{ card.subtitle }}</h5>
+            </igx-card-header>
+
+            <igx-card-content>
+            <p>{{ card.content }}</p>
+            </igx-card-content>
+
+            <igx-card-actions>
+            @for (button of card.buttons; track button) {
+                <button igxButton igxRipple igxStart>{{ button }}</button>
+            }
+            @for (icon of card.icons; track icon) {
+                <button igxIconButton="flat"
+                igxRipple
+                [igxRippleCentered]="true"
+                igxEnd>
+                <igx-icon>{{icon}}</igx-icon>
+                </button>
+            }
+            </igx-card-actions>
+
+        </igx-card>
+    </div>
+     <div class="card-box__el">
+        <igx-card elevated>
+            <igx-card-media height="180px" >
+            <img [src]="card.imageUrl">
+            </igx-card-media>
+
+            <igx-card-header>
+            <h3 igxCardHeaderTitle>{{ card.title }}</h3>
+            <h5 igxCardHeaderSubtitle>{{ card.subtitle }}</h5>
+            </igx-card-header>
+
+            <igx-card-content>
+            <p>{{ card.content }}</p>
+            </igx-card-content>
+
+            <igx-card-actions>
+            @for (button of card.buttons; track button) {
+                <button igxButton igxRipple igxStart>{{ button }}</button>
+            }
+            @for (icon of card.icons; track icon) {
+                <button igxIconButton="flat"
+                igxRipple
+                [igxRippleCentered]="true"
+                igxEnd>
+                <igx-icon>{{icon}}</igx-icon>
+                </button>
+            }
+            </igx-card-actions>
+
+        </igx-card>
+    </div>
+    <div class="card-box__el">
+        <igx-card elevated>
+            <igx-card-media height="180px" >
+            <img [src]="card.imageUrl">
+            </igx-card-media>
+
+            <igx-card-header>
+            <h3 igxCardHeaderTitle>{{ card.title }}</h3>
+            <h5 igxCardHeaderSubtitle>{{ card.subtitle }}</h5>
+            </igx-card-header>
+
+            <igx-card-content>
+            <p>{{ card.content }}</p>
+            </igx-card-content>
+
+            <igx-card-actions>
+            @for (button of card.buttons; track button) {
+                <button igxButton igxRipple igxStart>{{ button }}</button>
+            }
+            @for (icon of card.icons; track icon) {
+                <button igxIconButton="flat"
+                igxRipple
+                [igxRippleCentered]="true"
+                igxEnd>
+                <igx-icon>{{icon}}</igx-icon>
+                </button>
+            }
+            </igx-card-actions>
+
+        </igx-card>
+    </div>
+</div>
+
+</div>
+
+
+  

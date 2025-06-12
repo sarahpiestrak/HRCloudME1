@@ -1,0 +1,19 @@
+@use 'igniteui-angular/theming' as *;
+@forward 'igniteui-angular/theming';
+
+$palette: $light-material-palette;
+$schema: $light-material-schema;
+
+$default-palette: $palette;
+
+$basic-palette: palette(
+    $primary: #0076c0,
+    $secondary:#f5f9f9f3 ,
+    $surface: #333,
+    $info: #0076c0,
+    $success: #4eb862,
+    $warn: #fbb13c,
+    $error: #ff134a,
+);
+
+$gray-btn-color: color($basic-palette, 'gray', 800);
