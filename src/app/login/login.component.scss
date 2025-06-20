@@ -1,0 +1,44 @@
+@import './../../variables';
+
+
+
+
+.main-box {
+    width: 100%;
+    background: color($color: 'secondary');
+    padding: 8px;
+    border-radius: 6px;
+}
+
+    .main-body {
+    width: 50%;
+    padding: 50px;
+    border-radius: 6px;
+
+    &.tall {
+        height: 300px;
+    }
+
+
+    }
+
+   
+
+    .small_image
+    {
+        height: 200px;
+        width: auto;
+    }
+
+    .login_card
+    {
+      width: 60vh !important;  
+      justify-content: center !important;
+      
+    }
+
+    .login_button
+    {
+        height: 50px;
+        justify-content: center;
+    }

@@ -1,19 +1,6 @@
 
 <div igxLayout igxLayoutDir="column" class="main_container">
-   <div class="mainbar-box" igxLayout igxLayoutDir="row" igxLayoutItemAlign="flex-end">
-         <div igxFlex class="mainbar-box__item" >  
-            <img src="./../assets/images/hrcloud2Small.png">  </div>
-
-
-        <!-- <div  class="mainbar-box__item"  igxLayoutItemAlign="stretch"> </div>  -->
-        <div  class="mainbar-box__item" igxLayoutItemAlign="flex-end"><a href="google.com">Features</a></div>
-        <div  class="mainbar-box__item" igxLayoutItemAlign="flex-end"><a href="yahoo.com">Small Businesses</a></div>
-        <div   class="mainbar-box__item" igxLayoutItemAlign="flex-end"><a href="test.com">HR Consultants</a></div>
-        <div  class="mainbar-box__item" igxLayoutItemAlign="flex-end"><a href="pricing.com">Pricing</a></div>
-        <div   class="mainbar-box__item" igxLayoutItemAlign="flex-end"><a href="test.com">Constact Us</a></div>
-      
-       
-    </div>
+   
 
     <div class="carousel-container"  >
         <igx-carousel #carousel>
@@ -27,134 +14,101 @@
         </igx-carousel>
     </div>
 
-<div class="card-wrapper" igxLayout igxLayoutDir="row" igxLayoutJustify="space-between">
-    <div class="card-box__el">
-        <igx-card elevated>
-            <igx-card-media height="180px">
-            <img [src]="card.imageUrl">
-            </igx-card-media>
+    <div class="card-wrapper" igxLayout igxLayoutDir="row" igxLayoutJustify="space-between">
+        <div class="card-box__el">
+            <igx-card elevated>
+            
+                <igx-card-header class="payroll_header">
+                <h4 igxCardHeaderTitle>{{ cardPayroll.title }}</h4>
+                <h6 igxCardHeaderSubtitle class="card_subtitle">{{ cardPayroll.subtitle }}</h6>
+                </igx-card-header>
 
-            <igx-card-header>
-            <h3 igxCardHeaderTitle>{{ card.title }}</h3>
-            <h5 igxCardHeaderSubtitle>{{ card.subtitle }}</h5>
-            </igx-card-header>
+                <igx-card-content class="card_body">
+                <p>{{ cardPayroll.content }}</p>
+                </igx-card-content>
 
-            <igx-card-content>
-            <p>{{ card.content }}</p>
-            </igx-card-content>
+                <igx-card-actions>
+                @for (button of cardPayroll.buttons; track button) {
+                    <button igxButton igxRipple igxStart routerLink="/features">{{ button }}</button>
+                }
+                </igx-card-actions>
 
-            <igx-card-actions>
-            @for (button of card.buttons; track button) {
-                <button igxButton igxRipple igxStart>{{ button }}</button>
-            }
-            @for (icon of card.icons; track icon) {
-                <button igxIconButton="flat"
-                igxRipple
-                [igxRippleCentered]="true"
-                igxEnd>
-                <igx-icon>{{icon}}</igx-icon>
-                </button>
-            }
-            </igx-card-actions>
+            </igx-card>
+        </div>
 
-        </igx-card>
+        <div class="card-box__el">
+            <igx-card elevated>
+            
+                <igx-card-header class="leave_header">
+                <h4 igxCardHeaderTitle >{{ cardLeave.title }}</h4>
+                <h6 igxCardHeaderSubtitle class="card_subtitle">{{ cardLeave.subtitle }}</h6>
+                </igx-card-header>
+
+                <igx-card-content class="card_body">
+                <p>{{ cardLeave.content }}</p>
+                </igx-card-content>
+
+                <igx-card-actions>
+                @for (button of cardPayroll.buttons; track button) {
+                    <button igxButton igxRipple igxStart routerLink="/features">{{ button }}</button>
+                }
+                </igx-card-actions>
+
+            </igx-card>
+        </div>
+
+        <div class="card-box__el">
+            <igx-card elevated>
+            
+                <igx-card-header class="overtime_header">
+                <h4 igxCardHeaderTitle>{{ cardOvertime.title }}</h4>
+                <h6 igxCardHeaderSubtitle class="card_subtitle">{{ cardOvertime.subtitle }}</h6>
+                </igx-card-header>
+
+                <igx-card-content class="card_body">
+                <p>{{ cardOvertime.content }}</p>
+                </igx-card-content>
+
+                <igx-card-actions>
+                @for (button of cardOvertime.buttons; track button) {
+                    <button igxButton igxRipple igxStart routerLink="/features">{{ button }}</button>
+                }
+                </igx-card-actions>
+
+            </igx-card>
+        </div>
+
+        <div class="card-box__el">
+            <igx-card elevated>
+            
+                <igx-card-header class="advancesalary_header">
+                <h4 igxCardHeaderTitle>{{ cardAdvanceSalary.title }}</h4>
+                <h6 igxCardHeaderSubtitle class="card_subtitle">{{ cardAdvanceSalary.subtitle }}</h6>
+                </igx-card-header>
+
+                <igx-card-content class="card_body">
+                <p>{{ cardOvertime.content }}</p>
+                </igx-card-content>
+
+                <igx-card-actions>
+                @for (button of cardAdvanceSalary.buttons; track button) {
+                    <button igxButton igxRipple igxStart routerLink="/features">{{ button }}</button>
+                }
+                </igx-card-actions>
+
+            </igx-card>
+        </div>
+    
     </div>
-    <div class="card-box__el">
-        <igx-card elevated>
-            <igx-card-media height="180px" >
-            <img [src]="card.imageUrl">
-            </igx-card-media>
 
-            <igx-card-header>
-            <h3 igxCardHeaderTitle>{{ card.title }}</h3>
-            <h5 igxCardHeaderSubtitle>{{ card.subtitle }}</h5>
-            </igx-card-header>
+    <div igxLayout igxLayoutJustify="center" class="page_content"><p> <b>Made for HR Consultants, Made by HR Consultants, Made in Middle East </b> </p> </div>
 
-            <igx-card-content>
-            <p>{{ card.content }}</p>
-            </igx-card-content>
+   
 
-            <igx-card-actions>
-            @for (button of card.buttons; track button) {
-                <button igxButton igxRipple igxStart>{{ button }}</button>
-            }
-            @for (icon of card.icons; track icon) {
-                <button igxIconButton="flat"
-                igxRipple
-                [igxRippleCentered]="true"
-                igxEnd>
-                <igx-icon>{{icon}}</igx-icon>
-                </button>
-            }
-            </igx-card-actions>
-
-        </igx-card>
-    </div>
-     <div class="card-box__el">
-        <igx-card elevated>
-            <igx-card-media height="180px" >
-            <img [src]="card.imageUrl">
-            </igx-card-media>
-
-            <igx-card-header>
-            <h3 igxCardHeaderTitle>{{ card.title }}</h3>
-            <h5 igxCardHeaderSubtitle>{{ card.subtitle }}</h5>
-            </igx-card-header>
-
-            <igx-card-content>
-            <p>{{ card.content }}</p>
-            </igx-card-content>
-
-            <igx-card-actions>
-            @for (button of card.buttons; track button) {
-                <button igxButton igxRipple igxStart>{{ button }}</button>
-            }
-            @for (icon of card.icons; track icon) {
-                <button igxIconButton="flat"
-                igxRipple
-                [igxRippleCentered]="true"
-                igxEnd>
-                <igx-icon>{{icon}}</igx-icon>
-                </button>
-            }
-            </igx-card-actions>
-
-        </igx-card>
-    </div>
-    <div class="card-box__el">
-        <igx-card elevated>
-            <igx-card-media height="180px" >
-            <img [src]="card.imageUrl">
-            </igx-card-media>
-
-            <igx-card-header>
-            <h3 igxCardHeaderTitle>{{ card.title }}</h3>
-            <h5 igxCardHeaderSubtitle>{{ card.subtitle }}</h5>
-            </igx-card-header>
-
-            <igx-card-content>
-            <p>{{ card.content }}</p>
-            </igx-card-content>
-
-            <igx-card-actions>
-            @for (button of card.buttons; track button) {
-                <button igxButton igxRipple igxStart>{{ button }}</button>
-            }
-            @for (icon of card.icons; track icon) {
-                <button igxIconButton="flat"
-                igxRipple
-                [igxRippleCentered]="true"
-                igxEnd>
-                <igx-icon>{{icon}}</igx-icon>
-                </button>
-            }
-            </igx-card-actions>
-
-        </igx-card>
-    </div>
 </div>
 
-</div>
+  
+
 
 
   

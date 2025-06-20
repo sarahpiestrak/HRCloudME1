@@ -1,44 +1,6 @@
 @import './../../variables';
 
-.main_container
-{
-    height: 100vh;
-    overflow: scroll
-}
 
-$title-text-color: color($basic-palette, 'surface');
-
-.title-text
-{
-    color: red($color: #980d0d) important;
-    justify-content: left important;
-}
-
-
-
-.mainbar-box {
-    width: 100%;
-    background: color($color: 'secondary');
-    padding: 8px;
-    border-radius: 6px;
-
-    &.tall {
-        height: 300px;
-    }
-}
-
-.mainbar-box__item {
-    height: 48px;
-    padding: 10px 20px;
-    margin: 8px;
-    background: color($color: 'secondary');
-    color: color($color: 'surface');
-}
-
-a {
-  text-decoration: none;
-  color: color($color: 'surface');
-}
 
 .carousel-container {
     width: 90vw;
@@ -47,9 +9,9 @@ a {
 
 }
 
-:host ::ng-deep{
+
     .image-container {
-        max-width: 95%;
+        max-width: 90%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -82,11 +44,45 @@ a {
 }
 
 .card-box__el {
-    height: 48px;
+    width: 25%;
     padding: 10px 10px;
     margin: 8px;
     background: color($color: 'secondary');
     color: color($color: 'surface');
 }
 
+.card_subtitle
+{
+   background: color($color: 'secondary');
+    color: color($color: 'surface'); 
+    padding: 5px;
 }
+
+.payroll_header {
+    background: color($color: 'error');
+    
+}
+
+.leave_header {
+    background: color($color: 'warn');
+}
+
+
+.overtime_header {
+    background: color($color: 'success');
+}
+
+.advancesalary_header {
+    background: color($color: 'info');
+}
+
+.card_body {
+    background: color($color: 'secondary');
+    color: color($color: 'surface');
+    height : 150px;
+}
+
+
+
+
+

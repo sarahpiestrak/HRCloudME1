@@ -1,0 +1,38 @@
+@import './../../variables';
+
+
+
+.app_heading {
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.mainbar-box {
+    width: 100%;
+    background: color($color: 'secondary');
+    padding: 8px;
+    border-radius: 6px;
+
+}
+
+.mainbar-box__item_end {
+    height: 30px;
+    padding: 10px 20px;
+    margin: 8px;
+    background: color($color: 'secondary');
+    color: color($color: 'surface');
+    justify-content: end;
+}
+
+.mainbar-box__item {
+    height: 30px;
+    padding: 10px 20px;
+    margin: 8px;
+    background: color($color: 'secondary');
+    color: color($color: 'surface');
+}
+
+a {
+  text-decoration: none;
+  color: color($color: 'surface');
+}

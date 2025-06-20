@@ -1,0 +1,40 @@
+@import './../../variables';
+
+
+
+.container{
+height: 100%;
+}
+
+
+
+.main-box {
+    width: 100%;
+    background: color($color: 'secondary');
+    padding: 8px;
+    border-radius: 6px;
+}
+
+
+    .main-body {
+    width: 50%;
+    padding: 10px;
+    border-radius: 6px;
+
+    &.tall {
+        height: 300px;
+    }
+
+
+    }
+
+    .content_container{
+        padding-left: 100px;
+        height: 100%;
+    }
+
+    .small_image
+    {
+        height: 200px;
+        width: auto;
+    }

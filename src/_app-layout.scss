@@ -1,45 +1,21 @@
-.sample-wrapper {
-    width: inherit;
-    position: relative;
-    height: 100%;
-    margin: 0 auto;
-    background: transparent;
+@import 'variables';
+
+.ig-scrollbar
+{
+    overflow-y: scroll;
 }
 
-.sample-content {
-    display: flex;
-    flex-grow: 1;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    padding: 0;
-    -webkit-animation: fade-in .3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-    -moz-animation: fade-in .3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-    animation: fade-in .3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+.page_heading {
+    background: color($color: 'secondary');
+    color: color($color: 'surface');
+    font-size : large;
+    font-weight: bold;
+    justify-content: center;
+    margin: 10px 10px 10px 100px;
 }
 
-.sample-column {
-    display: flex;
-    flex-flow: column nowrap;
-    flex: 1 0 25%;
-    align-content: flex-start;
-    margin: 16px;
-    min-width: 280px;
-}
-
-.sample-title {
-    color: #0375be;
-    margin-bottom: 12px;
-    margin-top: 12px;
-}
-
-.sample-title .light {
-    font-weight: 400;
-}
-
-.sample-description {
-    font-size: 14px;
-    font-weight: normal;
-    color: #717171;
+.page_content{
+    padding: 20px;
 }
 
 @-webkit-keyframes color-change-2x {

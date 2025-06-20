@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/d1f5c95e-c7dc-41dd-af65-6a130ae93a28/resourceGroups/HRCloudME_group/providers/Microsoft.Web/sites/HRCloudME",
+    "appService.deploySubpath": "dist\\hrcloud-me\\browser"
+}

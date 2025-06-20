@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
-import { IgxIconButtonDirective, IgxButtonDirective, IgxButtonGroupModule, ButtonGroupAlignment, IgxFlexDirective, IgxLayoutDirective, IgxCarouselComponent, IgxSlideComponent, IgxCardComponent, IgxCardMediaDirective, IgxCardHeaderComponent, IgxCardHeaderTitleDirective, IgxCardHeaderSubtitleDirective, IgxCardContentDirective, IgxCardActionsComponent, IgxRippleDirective, IgxPrefixDirective, IgxSuffixDirective, IgxIconComponent} from 'igniteui-angular'
+import { IgxButtonDirective, ButtonGroupAlignment, IgxLayoutDirective, IgxCarouselComponent, IgxSlideComponent, IgxCardComponent, IgxCardHeaderComponent, IgxCardHeaderTitleDirective, IgxCardHeaderSubtitleDirective, IgxCardContentDirective, IgxCardActionsComponent, IgxRippleDirective, IgxPrefixDirective} from 'igniteui-angular'
 import { Card } from '../BusinessObjects/Card';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-home-page',
-  imports: [IgxLayoutDirective, IgxFlexDirective, IgxCarouselComponent, IgxSlideComponent,IgxCardComponent, IgxCardMediaDirective, IgxCardHeaderComponent, IgxCardHeaderTitleDirective, IgxCardHeaderSubtitleDirective, IgxCardContentDirective, IgxCardActionsComponent, IgxButtonDirective, IgxRippleDirective, IgxPrefixDirective, IgxIconButtonDirective, IgxSuffixDirective, IgxIconComponent],
+  imports: [IgxLayoutDirective, IgxCarouselComponent, IgxSlideComponent,IgxCardComponent, IgxCardHeaderComponent, IgxCardHeaderTitleDirective, IgxCardHeaderSubtitleDirective, IgxCardContentDirective, IgxCardActionsComponent, IgxButtonDirective, IgxRippleDirective, IgxPrefixDirective, RouterLink],
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.scss'
 })
@@ -14,26 +15,39 @@ export class HomePageComponent {
   public alignment = ButtonGroupAlignment.horizontal;
   public slides = [
       {
-        src: 'https://www.infragistics.com/angular-demos-lob/assets/images/carousel/ignite-ui-angular-indigo-design.png'
+        src: 'https://hrcloudfiles.blob.core.windows.net/marketing/AdminDashboard.png'
       },
       {
-        src: 'https://www.infragistics.com/angular-demos-lob/assets/images/carousel/slider-image-chart.png'
+        src: 'https://hrcloudfiles.blob.core.windows.net/marketing/EmployeeDashboard.png'
       },
       {
-        src: 'https://www.infragistics.com/angular-demos-lob/assets/images/carousel/ignite-ui-angular-charts.png'
+        src: 'https://hrcloudfiles.blob.core.windows.net/marketing/Payroll.png'
       }
   ];
 
-  public card = new Card({
+  public cardPayroll = new Card({
         buttons: ['read more'],
-        content: `New York City comprises 5 boroughs sitting where the
-                  Hudson River meets the Atlantic Ocean. At its core is Manhattan,
-                  a densely populated borough that's among the world's major commercial,
-                  financial and cultural centers.`,
-        icons: ['favorite', 'share'],
-        imageUrl: 'https://www.infragistics.com/angular-demos-lob/assets/images/card/media/ny.jpg',
-        subtitle: 'City in New York',
-        title: 'New York City'
+        content: `Generate payroll with one click, compare with previous payroll, generate bank file for salary transfer and email pay slips to employees.`,
+        subtitle: 'One Click Payroll & Pay slips',
+        title: 'Payroll'
+    });
+  public cardLeave = new Card({
+        buttons: ['read more'],
+        content: `Manage employee leave requests and automated accruals as per the Labor Law. Also manage leave encashments`,
+        subtitle: 'Accruals & encashment',
+        title: 'Leave Management'
+    });
+    public cardOvertime = new Card({
+        buttons: ['read more'],
+        content: `Overtime is calculated for the weekdays, weekends and holidays as per the local Labor Law.`,
+        subtitle: 'Overtime as per Labor Law',
+        title: 'Overtime'
+    });
+    public cardAdvanceSalary = new Card({
+        buttons: ['read more'],
+        content: `Advance salary is automatically deducted in the next payroll. It is also possible for employees to apply for loan that can be adjusted to multiple months with installments.`,
+        subtitle: 'Automated deductions',
+        title: 'Advance Salary'
     });
 
   public OpenMenu()
