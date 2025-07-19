@@ -12,7 +12,7 @@ import { Title } from '@angular/platform-browser';
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  title: string = 'HR Cloud ME';
+  title: string = 'HRCloudME';
 
   constructor(private titleService: Title) {}
 
@@ -23,7 +23,7 @@ export class AppComponent {
   setTitle(newTitle: string): void {
     this.titleService.setTitle(newTitle);
   }
-  
+
 }
 
 
