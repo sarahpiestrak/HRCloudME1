@@ -1,11 +1,11 @@
-@use './../../variables';
+@use './../../variables' as *;
 
 
 
 
 .main-box {
     width: 100%;
-    background: color($basic-palette: 'secondary');
+    background: color($basic-palette, 'secondary');
     padding: 8px;
     border-radius: 6px;
 }
@@ -34,7 +34,7 @@
     {
       width: 60vh !important;  
       justify-content: center !important;
-      background: color($basic-palette: 'primary');
+      background: color($basic-palette, 'primary');
       
     }
 

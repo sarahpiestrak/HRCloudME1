@@ -48,38 +48,38 @@
     width: 25%;
     padding: 10px 10px;
     margin: 8px;
-    background: color($basic-palette: 'secondary');
-    color: color($basic-palette: 'surface');
+    background: color($basic-palette, 'secondary');
+    color: color($basic-palette, 'surface');
 }
 
 .card_subtitle
 {
-   background: color($basic-palette: 'secondary');
-    color: color($basic-palette: 'surface'); 
+   background: color($basic-palette, 'secondary');
+    color: color($basic-palette, 'surface'); 
     padding: 5px;
 }
 
 .payroll_header {
-    background: color($basic-palette: 'error');
+    background: color($basic-palette, 'error');
     
 }
 
 .leave_header {
-    background: color($basic-palette: 'warn');
+    background: color($basic-palette, 'warn');
 }
 
 
 .overtime_header {
-    background: color($basic-palette: 'success');
+    background: color($basic-palette, 'success');
 }
 
 .advancesalary_header {
-    background: color($basic-palette: 'info');
+    background: color($basic-palette, 'info');
 }
 
 .card_body {
-    background: color($basic-palette: 'secondary');
-    color: color($basic-palette: 'surface');
+    background: color($basic-palette, 'secondary');
+    color: color($basic-palette, 'surface');
     height : 150px;
 }
 
