@@ -1,4 +1,5 @@
-@import './../../variables';
+@use './../../variables';
+
 
 
 
@@ -47,38 +48,38 @@
     width: 25%;
     padding: 10px 10px;
     margin: 8px;
-    background: color($color: 'secondary');
-    color: color($color: 'surface');
+    background: color($basic-palette: 'secondary');
+    color: color($basic-palette: 'surface');
 }
 
 .card_subtitle
 {
-   background: color($color: 'secondary');
-    color: color($color: 'surface'); 
+   background: color($basic-palette: 'secondary');
+    color: color($basic-palette: 'surface'); 
     padding: 5px;
 }
 
 .payroll_header {
-    background: color($color: 'error');
+    background: color($basic-palette: 'error');
     
 }
 
 .leave_header {
-    background: color($color: 'warn');
+    background: color($basic-palette: 'warn');
 }
 
 
 .overtime_header {
-    background: color($color: 'success');
+    background: color($basic-palette: 'success');
 }
 
 .advancesalary_header {
-    background: color($color: 'info');
+    background: color($basic-palette: 'info');
 }
 
 .card_body {
-    background: color($color: 'secondary');
-    color: color($color: 'surface');
+    background: color($basic-palette: 'secondary');
+    color: color($basic-palette: 'surface');
     height : 150px;
 }
 

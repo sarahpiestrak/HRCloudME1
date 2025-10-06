@@ -1,4 +1,4 @@
-@import './../../variables';
+@use './../../variables';
 
 
 
@@ -10,7 +10,7 @@ height: 100%;
 
 .main-box {
     width: 100%;
-    background: color($color: 'secondary');
+    background: color($basic-palette: 'secondary');
     padding: 8px;
     border-radius: 6px;
 }

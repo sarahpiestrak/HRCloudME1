@@ -1,4 +1,4 @@
-@import 'variables';
+@use 'variables' as *;
 
 .ig-scrollbar
 {
@@ -6,8 +6,8 @@
 }
 
 .page_heading {
-    background: color($color: 'secondary');
-    color: color($color: 'surface');
+    background: color($basic-palette,'secondary');
+    color: color($basic-palette,'surface');
     font-size : large;
     font-weight: bold;
     justify-content: center;
@@ -20,7 +20,7 @@
 
 @-webkit-keyframes color-change-2x {
     0% {
-        background: #fdf8f0;
+        background: #676054;
     }
     100% {
         background: #f6e7ec;

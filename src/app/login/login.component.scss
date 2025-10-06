@@ -1,11 +1,11 @@
-@import './../../variables';
+@use './../../variables';
 
 
 
 
 .main-box {
     width: 100%;
-    background: color($color: 'secondary');
+    background: color($basic-palette: 'secondary');
     padding: 8px;
     border-radius: 6px;
 }
@@ -34,7 +34,7 @@
     {
       width: 60vh !important;  
       justify-content: center !important;
-      background: color($color: 'primary');
+      background: color($basic-palette: 'primary');
       
     }
 

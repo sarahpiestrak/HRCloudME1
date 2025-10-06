@@ -1,4 +1,4 @@
-@import './../../variables';
+@use './../../variables';
 
 
 
@@ -9,7 +9,7 @@
 
 .mainbar-box {
     width: 100%;
-    background: color($color: 'secondary');
+    background: color($basic: 'secondary');
     padding: 8px;
     border-radius: 6px;
 
@@ -19,8 +19,8 @@
     height: 30px;
     padding: 10px 20px;
     margin: 8px;
-    background: color($color: 'secondary');
-    color: color($color: 'surface');
+    background: color($basic-palette: 'secondary');
+    color: color($basic-palette: 'surface');
     justify-content: end;
 }
 
@@ -28,11 +28,11 @@
     height: 30px;
     padding: 10px 20px;
     margin: 8px;
-    background: color($color: 'secondary');
-    color: color($color: 'surface');
+    background: color($basic-palette: 'secondary');
+    color: color($basic-palette: 'surface');
 }
 
 a {
   text-decoration: none;
-  color: color($color: 'surface');
+  color: color($basic-palette: 'surface');
 }
