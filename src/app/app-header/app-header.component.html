@@ -7,15 +7,35 @@
                 <div class="app_heading">HR Cloud Middle East</div>
             </div>
             </a>
-        </div> 
+    </div> 
 
-
+@for (item of navItems; track item) {
         <!-- <div  class="mainbar-box__item"  igxLayoutItemAlign="stretch"> </div>  -->
-        <div  class="mainbar-box__item_end" igxFlex igxLayoutItemAlign="flex-end"><a routerLink="/features">Features</a></div>
-        <div  class="mainbar-box__item_end" igxFlex igxLayoutItemAlign="flex-end"><a routerLink="/smallbusiness">Small Businesses</a></div>
-        <div   class="mainbar-box__item_end" igxFlex igxLayoutItemAlign="flex-end"><a routerLink="/hrconsultants">HR Consultants</a></div>
-        <div   class="mainbar-box__item_end" igxFlex igxLayoutItemAlign="flex-end"><a routerLink="/contactus">Contact Us</a></div>
-       <div   class="mainbar-box__item_end" igxFlex igxLayoutItemAlign="flex-end"><a routerLink="/login">Login</a></div>
-      
+        <div  class="mainbar-box__item_end" igxFlex igxLayoutItemAlign="flex-end"><a routerLink={{item.route}}>{{item.text}}</a></div>
+}
+
+<igx-navbar class="mainmenu" title="HR Cloud ME">
+  <button igxIconButton="flat" (click)="toggleDrawer()">
+    <igx-icon>menu</igx-icon>
+  </button>
+</igx-navbar>
+
+<igx-nav-drawer id="navigation" class="mainmenu" #drawer [isOpen]="false" [pinThreshold]="5000">
+    <ng-template igxDrawer>
+      <nav>
+        <span igxDrawerItem [isHeader]="true">Components</span>
+
+        @for (item of navItems; track item) {
+          <span igxDrawerItem [active]="item.text === selected" igxRipple (click)="navigate(item)">
+            <igx-icon family="material">{{ item.icon }}</igx-icon>
+            <span>{{ item.text }}</span>
+          </span>
+        }
+      </nav>
+    </ng-template>
+  </igx-nav-drawer>
+
+
        
-    </div>
+</div>
+

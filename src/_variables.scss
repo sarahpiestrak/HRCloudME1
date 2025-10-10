@@ -17,3 +17,5 @@ $basic-palette: palette(
 );
 
 $gray-btn-color: color($basic-palette, 'gray', 800);
+
+@include theme($basic-palette);

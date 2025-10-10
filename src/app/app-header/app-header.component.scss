@@ -1,11 +1,16 @@
 @use './../../variables' as *;
 
+@use "igniteui-angular/theming" as *;
 
 
 .app_heading {
     font-size: larger;
     font-weight: bolder;
+    width: 175px;
 }
+
+
+
 
 .mainbar-box {
     width: 100%;
@@ -22,6 +27,8 @@
 }
 }
 
+
+
 @media screen and (min-width: 681px)
 {
 .mainbar-box__item_end {
@@ -36,6 +43,8 @@
 
 
 
+@media screen and (min-width: 681px)
+{
 .mainbar-box__item {
     height: 30px;
     padding: 10px 20px;
@@ -43,8 +52,43 @@
     background: color($basic-palette, 'secondary');
     color: color($basic-palette, 'surface');
 }
+}
+
+@media screen and (max-width: 680px)
+{
+.mainbar-box__item {
+    display: none;
+}
+}
+
+@media screen and (max-width: 680px)
+{
+.mainmenu {
+    height: 30px;
+    padding: 10px 10px;
+    margin: 8px;
+    background: color($basic-palette, 'secondary');
+    color: color($basic-palette, 'surface');
+}
+}
+
+$custom-navbar-theme: navbar-theme(
+  $background: color($basic-palette, 'secondary'),
+  $idle-icon-color: color($basic-palette, 'surface'),
+);
+
+
+@media screen and (min-width: 681px)
+{
+.mainmenu {
+    display: none;
+}
+}
+
 
 a {
   text-decoration: none;
   color: color($basic-palette, 'surface');
 }
+
+@include css-vars($custom-navbar-theme);
