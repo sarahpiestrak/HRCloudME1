@@ -15,14 +15,26 @@
 
 }
 
+@media screen and (max-width: 680px)
+{
+.mainbar-box__item_end {
+    display: none;
+}
+}
+
+@media screen and (min-width: 681px)
+{
 .mainbar-box__item_end {
     height: 30px;
-    padding: 10px 20px;
+    padding: 10px 10px;
     margin: 8px;
     background: color($basic-palette, 'secondary');
     color: color($basic-palette, 'surface');
     justify-content: end;
 }
+}
+
+
 
 .mainbar-box__item {
     height: 30px;
