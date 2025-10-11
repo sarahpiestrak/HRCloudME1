@@ -16,11 +16,22 @@
     }
 
    
+    @media screen and (min-width: 1025px)
+    {
+    .small_image
+    {
+        width: 500px;
+      
+    }
+    }
 
+ @media screen and (max-width: 1024px)
+    {
     .small_image
     {
         width: 350px;
       
+    }
     }
 
 
@@ -36,10 +47,17 @@
     {
       width: 300px;  
       padding: 20px;
+      margin: 20px;
       justify-content: center !important;
       background: color($basic-palette, 'secondary');
-      
+      color: color($basic-palette, 'surface');
     }
+
+     .textcolor
+    {
+      color: color($basic-palette, 'surface');
+    }
+
 
     .login_button
     {
@@ -51,3 +69,4 @@
     {
         justify-content: right;
     }
+
