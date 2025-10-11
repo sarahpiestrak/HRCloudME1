@@ -16,7 +16,6 @@ height: 100%;
 }
 
     .main-body {
-    width: 50%;
     padding: 10px;
     border-radius: 6px;
 
@@ -34,6 +33,13 @@ height: 100%;
 
     .small_image
     {
-        height: 200px;
-        width: auto;
+        width: 350px;
+    }
+
+    @media screen and (max-width: 680px)
+    {
+    .small_image
+        {
+           display: none;
+        }
     }

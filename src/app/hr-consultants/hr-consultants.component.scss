@@ -17,7 +17,6 @@ height: 100%;
 
 
     .main-body {
-    width: 50%;
     padding: 10px;
     border-radius: 6px;
 
@@ -37,4 +36,12 @@ height: 100%;
     {
         height: 200px;
         width: auto;
+    }
+
+     @media screen and (max-width: 680px)
+    {
+    .small_image
+        {
+           display: none;
+        }
     }

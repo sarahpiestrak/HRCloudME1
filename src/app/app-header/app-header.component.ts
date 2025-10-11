@@ -27,12 +27,12 @@ export class AppHeaderComponent {
 constructor(
   private router: Router  ) {}
 
-      public navigate(item : any) {
+      public navigate(itemRoute : any) {
         
         if (this.drawer!=null)
           this.drawer.close();
 
-        this.router.navigate([ item.route ]);
+        this.router.navigate([ itemRoute ]);
 
 
     }

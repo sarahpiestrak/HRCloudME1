@@ -4,37 +4,40 @@
 
 
 .main-box {
-    width: 100%;
+    width: 80%;
     background: color($basic-palette, 'secondary');
     padding: 8px;
     border-radius: 6px;
 }
 
     .main-body {
-    width: 50%;
-    padding: 100px;
     border-radius: 6px;
-
-    &.tall {
-        height: 300px;
-    }
-
-
+    width: 300px;
     }
 
    
 
     .small_image
     {
-        height: 275px;
-        width: auto;
+        width: 350px;
+      
+    }
+
+
+     @media screen and (max-width: 680px)
+    {
+    .small_image
+        {
+           display: none;
+        }
     }
 
     .login_card
     {
-      width: 60vh !important;  
+      width: 300px;  
+      padding: 20px;
       justify-content: center !important;
-      background: color($basic-palette, 'primary');
+      background: color($basic-palette, 'secondary');
       
     }
 

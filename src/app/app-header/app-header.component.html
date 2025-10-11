@@ -25,8 +25,13 @@
       <nav>
         <span igxDrawerItem [isHeader]="true">Components</span>
 
+        <span igxDrawerItem igxRipple (click)="navigate('./')">
+            <igx-icon family="material">home</igx-icon>
+            <span>Home</span>
+          </span>
+
         @for (item of navItems; track item) {
-          <span igxDrawerItem [active]="item.text === selected" igxRipple (click)="navigate(item)">
+          <span igxDrawerItem [active]="item.text === selected" igxRipple (click)="navigate(item.route)">
             <igx-icon family="material">{{ item.icon }}</igx-icon>
             <span>{{ item.text }}</span>
           </span>
