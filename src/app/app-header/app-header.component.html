@@ -1,29 +1,32 @@
-<div class="mainbar-box" igxLayout igxLayoutDir="row" igxFlex igxLayoutItemAlign="flex-end">
+<div class="mainbar-box" igxLayout igxLayoutDir="row" igxFlex igxLayoutItemAlign="flex-end" igxLayoutJustify="space-between">
           
-    <div class="mainbar-box__item">
-           <a routerLink="/" class="app_image">
+    <div class="titlewrapper">
+           <a routerLink="/" >
              <div igxFlex  igxLayout igxLayoutDir="row">
-                <img src="https://hrcloudfiles.blob.core.windows.net/marketing/hrcloudbig.svg"> 
-            </div>
+                <img class="app_image" src="https://hrcloudfiles.blob.core.windows.net/marketing/HrCloudSmall.svg"> 
+                <span class="titleHRCloud">HR Cloud ME</span>
+              </div>
+            
             </a>
     </div> 
 
 @for (item of navItems; track item) {
-        <!-- <div  class="mainbar-box__item"  igxLayoutItemAlign="stretch"> </div>  -->
-        <div  class="mainbar-box__item_end" igxFlex igxLayoutItemAlign="flex-end"><a routerLink={{item.route}}>{{item.text}}</a></div>
+        <div class="mainbar-box__item_end">
+          <a routerLink={{item.route}} >
+            <span>{{item.text}}</span>
+          </a>
+        </div>
 }
 
-<igx-navbar class="mainmenu" title="HR Cloud ME">
+<igx-navbar class="mainmenu">
 
   <div igxNavbarTitle>
-      <a href="https://www.hrcloudme.com" target="_blank">
+      <a href="https://www.hrcloudme.com" target="_blank" igxFlex  igxLayout igxLayoutDir="row">
         <img
-          src="https://hrcloudfiles.blob.core.windows.net/marketing/hrcloudbig.svg"
-          width="120px"
-          height="50px"
-          alt
-          style="margin-top: 7px;"
+          src="https://hrcloudfiles.blob.core.windows.net/marketing/HrCloudSmall.svg"
+          class="app_image"
         />
+        <span class="titleHRCloud">HR Cloud ME</span>
       </a>
     </div>
 

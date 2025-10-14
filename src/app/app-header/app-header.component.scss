@@ -9,6 +9,10 @@
     width: 175px;
 }
 
+.app_image
+{
+    height: 45px;
+}
 
 
 
@@ -27,17 +31,33 @@
 }
 }
 
+.titleHRCloud
+{
+    font-weight: bold;
+    align-self: center;
+    padding: 10px;
+    color: color($basic-palette, 'surface');
+}
+
+@media screen and (max-width: 680px)
+{
+.titlewrapper
+{
+ display: none;
+}
+}
+
 
 
 @media screen and (min-width: 681px)
 {
 .mainbar-box__item_end {
     height: 30px;
-    padding: 10px 10px;
     margin: 8px;
     background: color($basic-palette, 'secondary');
     color: color($basic-palette, 'surface');
-    justify-content: end;
+    align-self: center ;
+    align-content: center;
 }
 }
 
@@ -65,9 +85,9 @@
 {
 .mainmenu {
     height: 30px;
-    margin: 8px;
     background: color($basic-palette, 'secondary');
     color: color($basic-palette, 'surface');
+    align-content:start;
 }
 }
 

@@ -5,13 +5,20 @@
     overflow-y: scroll;
 }
 
+.main-box {
+    width: 90vw;
+    background: color($basic-palette, 'secondary');
+    padding: 8px;
+    border-radius: 6px;
+}
+
 .page_heading {
     background: color($basic-palette,'secondary');
     color: color($basic-palette,'surface');
     font-size : large;
     font-weight: bold;
     justify-content: center;
-    margin: 10px 10px 10px 100px;
+    margin: 10px;
 }
 
 .page_content{
