@@ -31,6 +31,15 @@
 }
 }
 
+.titleHRCloudSmall
+{
+    font-weight: bold;
+    padding: 10px;
+    color: color($basic-palette, 'surface');
+}
+
+
+
 .titleHRCloud
 {
     font-weight: bold;
@@ -87,13 +96,13 @@
     height: 30px;
     background: color($basic-palette, 'secondary');
     color: color($basic-palette, 'surface');
-    align-content:start;
+    align-self: flex-start;
 }
 }
 
 $custom-navbar-theme: navbar-theme(
   $background: color($basic-palette, 'secondary'),
-  $idle-icon-color: color($basic-palette, 'surface'),
+  $idle-icon-color: color($basic-palette, 'surface')
 );
 
 
