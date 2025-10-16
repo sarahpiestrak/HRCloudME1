@@ -1,5 +1,5 @@
 @use './../../variables' as *;
-
+@use "igniteui-angular/theming" as *;
 
 
 
@@ -51,6 +51,7 @@
       justify-content: center !important;
       background: color($basic-palette, 'secondary');
       color: color($basic-palette, 'surface');
+    
     }
 
      .textcolor
@@ -71,3 +72,9 @@
         justify-content: right;
     }
 
+$colorful-card: card-theme(
+  $background: color($basic-palette, 'secondary'),
+  $header-text-color: color($basic-palette, 'surface')
+);
+
+@include css-vars($colorful-card);

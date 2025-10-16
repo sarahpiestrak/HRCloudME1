@@ -4,10 +4,16 @@
 
 .container{
 width: 90vw;
+align-self: center;
+
 }
 
 
-
+.center-align{
+    align-content: center;
+    align-items: center;
+    align-self: center;
+}
 
 
     .main-body {

@@ -12,12 +12,19 @@
     border-radius: 6px;
 }
 
+.page-box {
+    width: 100%;
+    background: color($basic-palette, 'secondary');
+    padding: 8px;
+    border-radius: 6px;
+}
+
 .page_heading {
     background: color($basic-palette,'secondary');
     color: color($basic-palette,'surface');
     font-size : large;
     font-weight: bold;
-    justify-content: center;
+    justify-content: start;
     margin: 10px;
 }
 
